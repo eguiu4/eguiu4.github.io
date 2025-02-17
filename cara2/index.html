@@ -7,6 +7,7 @@
   <body>
     <script>
 let mic;
+      let temblar;
      
     
       function setup() {
@@ -15,12 +16,20 @@ let mic;
         mic.start();// activa el micròfon
 }
 function draw() {
+  temblar=random(10,50)
   let vol=mic.getLevel();
   let h=map(vol,0,1,0,800);
-  background(4-h, 0, 247);
-  fill(253, 224, 192-);
-  ellipse(windowWidth/2,windowHeight/2,300,300);
-  fill(0, 0, 0+h);
+  background(o,255-h,155);//color de fons
+  fill(217,190+h,150);//color cara
+  ellipse(windowWidth/2,windowHeight/2,300+temblar,300+temblar);//cara
+  //el primer que hi ha entre parentesises diu diametre i es la posició x del centre de la cara
+  //windowWidth/2 significa que el centre de la cara coincideix  amb el centre de la finstra
+  //el segon paràmetre  és la posició y o alçadade del centre de la cara
+  //windowHeight/2 significa el centre dela cara en alçada i coincideix amb el centre de la cara
+  //el terçer paràmetre és l'amplada de la cara
+  //el quart es l'alçada de la cara
+  //temblar està sumat a l'amplada i l'alçada de la cara i canviara aleatoriament entre 10 i 50 pixels
+  fill(42,31-h,13+h);//color cara
   ellipse(windowWidth/2-70,windowHeight/2-60,50,50);
   ellipse(windowWidth/2+70,windowHeight/2-60,50,50);
   arc(windowWidth/2,windowHeight/2+90,100,50+h,0,PI);
