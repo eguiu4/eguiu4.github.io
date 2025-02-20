@@ -29,11 +29,12 @@ function draw() {
   //el terçer paràmetre és l'amplada de la cara
   //el quart es l'alçada de la cara
   //temblar està sumat a l'amplada i l'alçada de la cara i canviara aleatoriament entre 10 i 50 pixels
-  fill(42,31-h,13+h);//color cara
+  fill(42+h*2,31-h,13+h);//color cara
   ellipse(windowWidth/2-70,windowHeight/2-60,50,50);
   ellipse(windowWidth/2+70,windowHeight/2-60,50,50);
   arc(windowWidth/2,windowHeight/2+90,100,50+h,0,PI);
 }
+      console.log(h);
     </script>
 </body>
 </html>
