@@ -60,10 +60,10 @@ function draw() {
   arc(windowWidth/2,windowHeight/2+90,100,50+h,0,PI);// boca
    noStroke();
   fill(255, 255, 255);//color blanc de les ales 
-  ellipse(60,40,20,20);//ala blanca de la dreta
-  ellipse(40,60,20,20);//ala blanca de la esquerra
+  ellipse(noiseX+10,noiseX-10,20,20);//ala blanca de la dreta
+  ellipse(noiseX-10,noiseX+10,20,20);//ala blanca de la esquerra
     fill(0, 0, 0);//color negre
-  ellipse(50,50,20,30);//cos del mosquit negre de forma rodona 20 pixels ample i 20 pixels alt i situat a 50 pixels de la cantonada superior esquerra
+  ellipse(noiseX,noiseY,20,30);//cos del mosquit negre de forma rodona 20 pixels ample i 20 pixels alt i situat a 50 pixels de la cantonada superior esquerra
 }
        /* Funció per canviar el color de fons:
        Utilitza random() per generar components RGB aleatoris dins d'un interval.
