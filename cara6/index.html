@@ -18,6 +18,7 @@ let mic;
   createCanvas(windowWidth,windowHeight);
         mic=new p5.AudioIn();// guarda a la variable mic una entrada de audio de p5.js
         mic.start();// activa el micròfon
+        bgColor = color(200, 220, 255)
 }
 function draw() {
    t += 0.01;
