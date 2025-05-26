@@ -366,18 +366,63 @@
             // Defineix que el contorn sigui de color groc (RGB: 255, 204, 0)
             fill(255, 230, 100, 150 * smoothIntensity);
             // Omple la forma amb un groc clar. El valor 150 * smoothIntensity controla la transparència.
-            beginShape();
-            // Inicia la definició d'una forma complexa (múltiples punts)
-            for (let i = 0; i < 10; i++) {
-              // Bucle per generar 10 punts (vertex) al voltant d’un cercle
-              const angle = map(i, 0, 10, 0, TWO_PI);
-              // Converteix l'índex actual en un angle, repartint-los uniformement al voltant d’un cercle (de 0 a 2π)
-              const radius = baseSize * (0.8 + sin(t + angle * 2) * 0.2);
-              // Calcula el radi per cada punt, afegint una oscil·lació amb sin() per aconseguir un efecte ondulatori
-              vertex(centerX + cos(angle) * radius, centerY + sin(angle) * radius);
-              // Defineix un vertex de la forma convertint coordenades polars a cartesianes
-            }
-            endShape(CLOSE);
+           beginShape();
+vertex(339, 1298.1875);
+vertex(340, 1006.1875);
+vertex(314, 991.1875);
+vertex(300, 969.1875);
+vertex(299, 950.1875);
+vertex(271, 939.1875);
+vertex(274, 678.1875);
+vertex(243, 675.1875);
+vertex(214, 673.1875);
+vertex(198, 670.1875);
+vertex(186, 662.1875);
+vertex(248, 423.1875);
+vertex(234, 310.1875);
+vertex(242, 183.1875);
+vertex(252, 128.1875);
+vertex(280, 83.1875);
+vertex(317, 36.1875);
+vertex(344, 24.1875);
+vertex(379, 7.1875);
+vertex(400, 1.1875);
+vertex(583, 0.1875);
+vertex(692, 0.1875);
+vertex(692, 167.1875);
+vertex(712, 160.1875);
+vertex(731, 164.1875);
+vertex(751, 171.1875);
+vertex(751, 171.1875);
+vertex(765, 179.1875);
+vertex(799, 217.1875);
+vertex(800, 225.1875);
+vertex(807, 251.1875);
+vertex(807, 251.1875);
+vertex(809, 289.1875);
+vertex(807, 327.1875);
+vertex(807, 327.1875);
+vertex(785, 366.1875);
+vertex(772, 383.1875);
+vertex(755, 401.1875);
+vertex(726, 418.1875);
+vertex(700, 418.1875);
+vertex(693, 412.1875);
+vertex(690, 885.1875);
+vertex(682, 899.1875);
+vertex(658, 910.1875);
+vertex(652, 926.1875);
+vertex(625, 937.1875);
+vertex(608, 946.1875);
+vertex(592, 952.1875);
+vertex(553, 971.1875);
+vertex(507, 986.1875);
+vertex(495, 986.1875);
+vertex(452, 992.1875);
+vertex(392, 997.1875);
+vertex(351, 1005.1875);
+vertex(339, 1006.1875);
+endShape();
             // Tanca la forma, connectant el darrer vertex amb el primer per completar el contorn
             break;
 
